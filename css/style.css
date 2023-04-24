@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #285A43;
+    --secodry-text-color: #121212;
+    --accent-color: #2294ed;
+    --primary-color-dark: #285A43;
+    --padding-inline-section: 10px;
+
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    color: var(--primary-text-color);
+}
+
+/* text decoration */
+.raleway-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 150%;
+    color: #121212;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 167px;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+
+
+/* text decoration */
+
+/* logo text */
+
+.logotext {
+    width: 67px;
+    height: 43px;
+    left: 120px;
+    top: 58px;
+    color: white;
+
+    font-family: 'Leckerli One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.nav-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
+
+/* button */
+
+.btn-hero {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    width: 168px;
+    height: 41px;
+}
+
+.btn-hero:hover {
+    background-color: #285A43;
+    color: white;
+}
+
+.btn-cta {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    width: 100px;
+    height: 41px;
+}
+
+.btn-cta:hover {
+    color: white;
+    background-color: #285A43;
+}
+
+/* button */
+
+
+
+.hero-image {
+    position: absolute;
+    width: 1440px;
+    height: 758px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(180deg, rgba(18, 56, 39, 0.34) 0%, rgba(40, 90, 67, 0.34) 47.92%, rgba(40, 90, 67, 0.102) 100%), url('file:///D:/irfan/Web%20Projects/Lushy%20garden/assets/plants.png');
+}
+
+
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+    text-decoration: none;
+
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links ul a {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.hover-link {
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+    font-weight: 500;
+
+}
+
+.hover-link:hover {
+    color: white;
+    text-decoration: underline;
+
+}
+
+.company-logo p {
+    text-decoration: none;
+    color: black;
+    font-family: 'Leckerli One';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+/* .hero{
+    text-align: center;
+   
+} */
+
+.tag-line {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.tag-button {
+    text-align: center;
+    margin-top: 35px;
+
+}
+
+.Video-icon {
+    margin-right: 6px;
+}
+
+.About-us {
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+
+    color: #121212;
+
+    opacity: 80%;
+}
+
+.plants-card {
+    display: flex;
+    padding: 30px;
+    margin-top: 90px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    /* display: inline-block; */
+    overflow: hidden;
+    /* position: relative; */
+
+}
+
+.plants-card:hover {
+    background-color: #285A43;
+    color: #FFFFFF;
+    transition: 0.5s ease-out;
+
+}
+
+.plants-card img {
+    width: 45px;
+}
+
+.plants-card img.image-hover {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 30px;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.plants-card:hover img.image-hover {
+    opacity: 1;
+}
+
+.plants-text {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.plants-text2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #121212;
+
+    opacity: 80%;
+}
+
+.product-button {
+    margin-left: 80px;
+    width: 98px;
+    height: 33px;
+    border-radius: 3px;
+    border-color: #285A43;
+    color: #285A43;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+
+    text-transform: capitalize;
+
+}
+
+.product-button:hover{
+    background-color: #285A43;
+    color: white;
+}
+
+.plants-card:hover p {
+    color: white;
+}
+
+.product-card {
+    width: 280px;
+    height: 314px;
+    padding: 10px;
+    /* justify-content: center; */
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+}
+
+.produtcs-img {
+    /* background-color: aqua; */
+    width: 280px;
+    height: 250px;
+    background-size: cover;
+}
+
+.product-1 {
+    background-image: url('file:///C:/Users/is244/Desktop/Lushy-Garden/assets/product1.png');
+}
+
+.product-2 {
+    background-image: url('file:///C:/Users/is244/Desktop/Lushy-Garden/assets/product2.png');
+}
+
+.product-3 {
+    background-image: url('file:///C:/Users/is244/Desktop/Lushy-Garden/assets/product3.png');
+}
+
+.product-4 {
+    background-image: url('file:///C:/Users/is244/Desktop/Lushy-Garden/assets/product4.png');
+}
+
+.product-5 {
+    background-image: url('file:///C:/Users/is244/Desktop/Lushy-Garden/assets/product5.png');
+}
+
+.product-6 {
+    background-image: url('file:///C:/Users/is244/Desktop/Lushy-Garden/assets/product6.png');
+}
+
+.product-7 {
+    background-image: url('file:///C:/Users/is244/Desktop/Lushy-Garden/assets/product7.png');
+}
+
+.product-8 {
+    background-image: url('file:///C:/Users/is244/Desktop/Lushy-Garden/assets/product8.png');
+}
+
+.product-text1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    text-transform: capitalize;
+
+    color: #337A5B;
+}
+
+.discount-text1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+
+    text-decoration-line: line-through;
+    text-transform: capitalize;
+
+    color: #121212;
+
+    opacity: 50%;
+}
+
+.discount-text2 {
+    margin-left: 5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+
+    text-transform: capitalize;
+
+    color: #337A5B;
+}
+
+
+.product-footer {
+
+    margin-left: 20px;
+
+}
+
+.benefit-block-1 {
+    background-color: #FCFCFC;
+    height: 295px;
+}
+
+.benefit-block-2 {
+    background-color: #F8F8F8;
+    height: 295px;
+}
+
+.benefitimg {
+    width: 720px;
+    height: 758px;
+}
+
+.benefit-images {
+    width: 30%;
+    margin-top: 54px;
+    margin-left: 52px;
+}
+
+.Testimonial-card {
+    /* position: absolute; */
+    /* width: 360px; */
+    height: 300px;
+
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(arto-suraj-X7jtnqyn54M-unsplash.jpg); */
+    border-radius: 10px;
+    background-color: #F8F8F8;
+    ;
+}
+
+.Testimonial-img {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 44px;
+    top: 40px;
+    border-radius: 50px;
+}
+
+
+.Testimonial-text1 {
+    margin-top: 58px;
+    margin-left: 128px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    /* line-height: 140%; */
+}
+
+.Testimonial-text2 {
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.qualityproductext1 {
+
+    margin-left: 68px;
+
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.qualityproductext2 {
+    margin-left: 68px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #121212;
+    text-align: left;
+    opacity: 80%;
+}
+
+.cta-image {
+    margin-top: 120px;
+    margin-bottom: 35px;
+    width: 1440px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('file:///D:/irfan/Web%20Projects/Lushy%20garden/assets/ctaimage.png');
+}
+
+.cta-text {
+    color: white;
+    text-transform: capitalize;
+    size: 32px;
+    text-align: left;
+    margin-top: 128px;
+}
+
+.ctainput {
+    width: 475px;
+    height: 48px;
+    left: 695px;
+    top: 152px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 50px;
+    padding: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+
+    background: rgba(217, 217, 217, 0.03);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(2.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 5px;
+}
+
+.calendar-text {
+    /* position: absolute; */
+    width: 124px;
+    height: 24px;
+    margin-left: 10px;
+    /* left: 29px;
+top: 494px; */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    /* font-size: 16px;
+    line-height: 150%; */
+    /* identical to box height, or 24px */
+
+
+    color: rgba(18, 18, 18, 0.8);
+
+    opacity: 0.8;
+}
+
+.blog-image {
+    width: 360px;
+    height: 335px;
+}
+
+.blog-text1 {
+    margin-top: 16px;
+    font-weight: 900;
+}
+
+.blog-text2 {
+    margin-top: 5px;
+    font-weight: 500;
+    opacity: 80%;
+    color: #121212;
+}
+
+.read-more-text {
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 900;
+    color: #285A43;
+}
+
+.read-more-text img {
+    width: 16px;
+    height: 12px;
+    margin-left: 5px;
+}
+
+.main-footer {
+    /* position: absolute; */
+    width: 1440px;
+    height: 374px;
+    text-align: center;
+
+    background: #285A43;
+}
+
+.footer-label {
+    color: white;
+}
+
+.social-media-icons {
+    margin-top: 35px;
+    width: 57px;
+    height: 57px;
+    justify-content: space-around;
+
+}
+
+.sub-footer {
+    background: #121212;
+}
